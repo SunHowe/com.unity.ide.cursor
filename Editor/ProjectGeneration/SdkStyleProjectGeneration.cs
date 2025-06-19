@@ -52,6 +52,7 @@ namespace Microsoft.Unity.VisualStudio.Editor
 		{
 			headerBuilder = new StringBuilder();
 
+			headerBuilder.Append(@"<?xml version=""1.0"" encoding=""utf-8""?>").Append(k_WindowsNewline);
 			headerBuilder.Append(@"<Project ToolsVersion=""Current"">").Append(k_WindowsNewline);
 			headerBuilder.Append(@"  <!-- Generated file, do not modify, your changes will be overwritten (use AssetPostprocessor.OnGeneratedCSProject) -->").Append(k_WindowsNewline);
 
