@@ -584,7 +584,12 @@ namespace Microsoft.Unity.VisualStudio.Editor
 			var application = Path;
 
 			var workspace = TryFindWorkspace(directory);
+			// Use version-compatible null-coalescing for Unity 2019.4 (C# 7.3) support
+#if UNITY_2020_2_OR_NEWER
 			workspace ??= directory;
+#else
+			workspace = workspace ?? directory;
+#endif
 			directory = workspace;
 
 			if (EditorPrefs.GetBool(ReuseExistingWindowKey, false))
