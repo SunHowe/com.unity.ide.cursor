@@ -1,5 +1,12 @@
 # Code Editor Package for Cursor
 
+## [2.0.28] - 2026-02-12
+
+Integration:
+
+- Performance optimization for opening files
+- Fix CS1525: Use C# 7.3-compatible null-coalescing for Unity 2019.4
+
 ## [2.0.27] - 2025-11-02
 
 Integration:
